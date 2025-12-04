@@ -29,17 +29,17 @@ assertEquals(2.5, calculatrice.division(5, 2), 0.001);
 assertEquals(3.0, calculatrice.division(9, 3), 0.001);
 }
 @Test
+void testNouvelleFonction() {
+
+// Test d'une opération simple
+assertEquals(10, calculatrice.multiplication(2, 5));
+assertEquals(-10, calculatrice.multiplication(2, -5));
+}
+@Test
 void testDivisionParZero() {
 Exception exception = assertThrows(ArithmeticException.class, () -> {
 calculatrice.division(10, 0);
 });
 assertEquals("Division par zéro impossible", exception.getMessage());
 }
-}
-@Test
-void testNouvelleFonction() {
-
-// Test d'une opération simple
-assertEquals(10, calculatrice.multiplication(2, 5));
-assertEquals(-10, calculatrice.multiplication(2, -5));
 }
