@@ -15,7 +15,7 @@ assertEquals(0, calculatrice.addition(-1, 1));
 }
 @Test
 void testSoustraction() {
-assertEquals(5, calculatrice.soustraction(5, 3));
+assertEquals(2, calculatrice.soustraction(5, 3));
 assertEquals(-2, calculatrice.soustraction(3, 5));
 }
 @Test
